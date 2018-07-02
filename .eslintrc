@@ -2,7 +2,6 @@
   "extends": [
     "standard",
     "standard-preact",
-
     "eslint-config-synacor",
     "prettier"
   ],
