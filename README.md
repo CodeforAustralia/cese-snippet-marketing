@@ -21,7 +21,8 @@ UI
 - [Reactstrap](https://reactstrap.github.io)
 
 NSW Department of Education's GEF Framework 
-- [GEF](https://bitbucket.org/dec-ce/gef)
+- [GEF Homepage](https://education.nsw.gov.au/gef)
+- [GEF Code](https://bitbucket.org/dec-ce/gef)
 
 
 ## Set up

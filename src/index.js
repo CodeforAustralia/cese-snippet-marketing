@@ -1,4 +1,4 @@
-import './style';
+import './style/index.scss';
 import { Component } from 'preact';
 
 class App extends Component {
