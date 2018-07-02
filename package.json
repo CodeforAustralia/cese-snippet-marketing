@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "snippet-marketing",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "dev": "preact watch --template src/template.html --no-prerender",
+    "start": "if-env NODE_ENV=production && yarn -s serve || yarn -s dev",
+    "build": "preact build --template src/template.html --prerenderUrls ./prerender-urls.json",
+    "serve": "preact build --service-worker false && preact serve",
+    "lint": "eslint src",
+    "predeploy": "NODE_ENV=production yarn build",
+    "deploy": "firebase deploy"
+  },
+  "eslintIgnore": [
+    "build/*"
+  ],
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard-preact": "^1.1.6",
+    "eslint-config-synacor": "^1.1.0",
+    "firebase-tools": "^3.19.1",
+    "if-env": "^1.0.0",
+    "node-sass": "^4.9.0",
+    "preact-cli": "^2.0.0",
+    "sass-loader": "^7.0.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "preact": "^8.2.1",
+    "preact-compat": "^3.17.0",
+    "preact-router": "^2.6.1",
+    "reactstrap": "^6.2.0"
+  }
+}
