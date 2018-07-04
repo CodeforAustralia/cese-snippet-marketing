@@ -73,73 +73,82 @@ module.exports = {
           }
         ]
       },
+
       { // User styles
         test: /\.(css|less|s[ac]ss|styl)$/,
         include: [
-          appSrc
-          // path.resolve(__dirname, './../src/components'),
-          // path.resolve(__dirname, './../src/routes'),
-          // source('components'),
-          // source('routes')
+          // don't include src/styles
+          path.resolve(__dirname, './../src/components'),
+          path.resolve(__dirname, './../src/layouts'),
+          path.resolve(__dirname, './../src/routes'),
         ],
-        use: [
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              localIdentName: '[local]__[hash:base64:5]',
-              importLoaders: 1,
-              sourceMap: isProd
+        loader: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                modules: true,
+                localIdentName: '[local]__[hash:base64:5]',
+                importLoaders: 1,
+                sourceMap: isProd
+              }
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                ident: 'postcss',
+                sourceMap: true,
+                plugins: [autoprefixer({ browsers })]
+              }
             }
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              ident: 'postcss',
-              sourceMap: true,
-              plugins: [autoprefixer({ browsers })]
-            }
-          }
-        ]
+          ]
+        })
       },
       { // External / `node_module` styles
         test: /\.(css|less|s[ac]ss|styl)$/,
         exclude: [
-          appSrc
-          // path.resolve(__dirname, './../src/components'),
-          // path.resolve(__dirname, './../src/routes'),
-          // source('components'),
-          // source('routes')
+          // don't include src/styles
+          path.resolve(__dirname, './../src/components'),
+          path.resolve(__dirname, './../src/layouts'),
+          path.resolve(__dirname, './../src/routes'),
         ],
-        use: [
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: isProd
+        loader: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                sourceMap: isProd
+              }
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                ident: 'postcss',
+                sourceMap: true,
+                plugins: [autoprefixer({ browsers })]
+              }
             }
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              ident: 'postcss',
-              sourceMap: true,
-              plugins: [autoprefixer({ browsers })]
-            }
-          }
-        ]
+          ]
+        })
       },
+      {
+        test: /\.(svg|woff2?|ttf|eot|jpe?g|png|gif|mp4|mov|ogg|webm)(\?.*)?$/i,
+        loader: isProd ? 'file-loader' : 'url-loader'
+      }
 
     ],
   },
 
   plugins: [
     // your custom plugins
-  //
-  //   // Extract CSS
-  //   new ExtractTextPlugin({
-  //     filename: isProd ? 'style.[contenthash:5].css' : 'style.css',
-  //     disable: !isProd,
-  //     allChunks: true
-  //   }),
+
+    // Extract CSS
+    new ExtractTextPlugin({
+      filename: isProd ? 'style.[contenthash:5].css' : 'style.css',
+      disable: !isProd,
+      allChunks: true
+    }),
   ],
 };
