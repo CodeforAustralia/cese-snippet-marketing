@@ -18,6 +18,7 @@
   "devDependencies": {
     "eslint": "^4.5.0",
     "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-preact": "^1.1.6",
     "eslint-config-synacor": "^1.1.0",
     "firebase-tools": "^3.19.1",
