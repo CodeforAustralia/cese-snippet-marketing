@@ -1,0 +1,114 @@
+// ----------------------
+// FOUNDATION (variables & mixins)
+// ----------------------
+
+//@import "foundation";
+//Commenting the locally hosted fonts to use google CDN hosted fonts in _global-head.pug
+//@import "fonts";
+
+// ----------------------
+// UIKIT
+// ----------------------
+
+@import "~uikit/src/scss/uikit";
+
+// ----------------------
+// UIKIT STYLE OVERRIDES
+// ----------------------
+
+@import "~gef/src/assets/sass/overrides-element";
+@import "~gef/src/assets/sass/overrides-class";
+
+// ----------------------
+// UTILITIES
+// ----------------------
+
+@import "~gef/src/assets/sass/utility";
+@import "~gef/src/assets/sass/examples";
+
+// ----------------------
+// GLOBAL PATTERNS
+// ----------------------
+
+@import "~gef/src/assets/sass/includes/global-corporate-logo";
+@import "~gef/src/assets/sass/includes/global-footer";
+@import "~gef/src/assets/sass/includes/global-header";
+@import "~gef/src/assets/sass/includes/skip-link";
+
+// ----------------------
+// INCLUDES
+// ----------------------
+
+@import "~gef/src/assets/sass/includes/a-z-anchors";
+@import "~gef/src/assets/sass/includes/a-z-list";
+@import "~gef/src/assets/sass/includes/add-this";
+@import "~gef/src/assets/sass/includes/anchor-box";
+@import "~gef/src/assets/sass/includes/article";
+@import "~gef/src/assets/sass/includes/back-to-top";
+@import "~gef/src/assets/sass/includes/back-to";
+@import "~gef/src/assets/sass/includes/banner";
+@import "~gef/src/assets/sass/includes/breadcrumbs";
+@import "~gef/src/assets/sass/includes/breadcrumbs-enhanced";
+@import "~gef/src/assets/sass/includes/button";
+@import "~gef/src/assets/sass/includes/call-out-box";
+@import "~gef/src/assets/sass/includes/catalogue-teaser";
+@import "~gef/src/assets/sass/includes/catalogue";
+@import "~gef/src/assets/sass/includes/category-list";
+@import "~gef/src/assets/sass/includes/datepicker";
+@import "~gef/src/assets/sass/includes/diagnostic-hud";
+@import "~gef/src/assets/sass/includes/dialogue";
+@import "~gef/src/assets/sass/includes/download-box";
+@import "~gef/src/assets/sass/includes/drawer";
+@import "~gef/src/assets/sass/includes/education-banner";
+@import "~gef/src/assets/sass/includes/expanded-nav";
+@import "~gef/src/assets/sass/includes/events";
+@import "~gef/src/assets/sass/includes/featured-teaser";
+@import "~gef/src/assets/sass/includes/featured-teaser-variant";
+@import "~gef/src/assets/sass/includes/flex-grid";
+@import "~gef/src/assets/sass/includes/form";
+@import "~gef/src/assets/sass/includes/google-translator";
+@import "~gef/src/assets/sass/includes/icon-and-label";
+@import "~gef/src/assets/sass/includes/iframe";
+@import "~gef/src/assets/sass/includes/image-with-caption";
+@import "~gef/src/assets/sass/includes/layout";
+@import "~gef/src/assets/sass/includes/landing-header";
+@import "~gef/src/assets/sass/includes/link-columns";
+@import "~gef/src/assets/sass/includes/link-tag";
+@import "~gef/src/assets/sass/includes/link-list";
+@import "~gef/src/assets/sass/includes/linkgroup";
+@import "~gef/src/assets/sass/includes/loader";
+@import "~gef/src/assets/sass/includes/login-link";
+@import "~gef/src/assets/sass/includes/long-document-index";
+@import "~gef/src/assets/sass/includes/main-navigation";
+@import "~gef/src/assets/sass/includes/maintenance-ribbon";
+@import "~gef/src/assets/sass/includes/news-teaser";
+@import "~gef/src/assets/sass/includes/notice-ribbon";
+@import "~gef/src/assets/sass/includes/page-metadata";
+@import "~gef/src/assets/sass/includes/pagination";
+@import "~gef/src/assets/sass/includes/radio-list";
+@import "~gef/src/assets/sass/includes/results-table";
+@import "~gef/src/assets/sass/includes/search-box";
+@import "~gef/src/assets/sass/includes/search-results";
+@import "~gef/src/assets/sass/includes/section-footer";
+@import "~gef/src/assets/sass/includes/section-header";
+@import "~gef/src/assets/sass/includes/side-navigation";
+@import "~gef/src/assets/sass/includes/show-hide";
+@import "~gef/src/assets/sass/includes/skip-link";
+@import "~gef/src/assets/sass/includes/social-media";
+@import "~gef/src/assets/sass/includes/social-media-post";
+@import "~gef/src/assets/sass/includes/table-of-contents";
+@import "~gef/src/assets/sass/includes/tabs";
+@import "~gef/src/assets/sass/includes/teaser";
+@import "~gef/src/assets/sass/includes/tile";
+@import "~gef/src/assets/sass/includes/tag-list";
+@import "~gef/src/assets/sass/includes/tile-list";
+@import "~gef/src/assets/sass/includes/view-control-icons";
+
+
+
+
+
+
+
+
+

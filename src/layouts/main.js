@@ -5,15 +5,16 @@ import {
   StickyBodyPanel,
   StickyFooterPanel,
 } from 'components/stickyPageLayout';
+import Footer from 'components/gefFooter';
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <StickyContainer>
       <StickyBodyPanel>
-        body
+        {children}
       </StickyBodyPanel>
       <StickyFooterPanel>
-        footer
+        <Footer />
       </StickyFooterPanel>
     </StickyContainer>
   )

@@ -1,0 +1,494 @@
+// ----------------------
+// GEF VARIABLES
+// ----------------------
+
+$gef-max-width:                                             1024px !default;
+
+// MEDIA QUERIES
+
+$gef-mq-md:                                                 "screen and (min-width: 768px)" !default;        // tablet and up
+$gef-mq-lg:                                                 "screen and (min-width: #{$gef-max-width})" !default;  // small laptops and up
+$gef-mq-xl:                                                 "screen and (min-width: 1220px)" !default;       // larger desktops
+
+// COLOURS
+
+
+$gef-concrete:                                              rgb(242,242,242);                       // #f2f2f2 lighter grey
+$gef-zircon:                                                rgb(224,224,224);                       // #e0e0e0 light grey
+$gef-magnesium:                                             rgb(180,180,180);                       // #b4b4b4 Medium
+$gef-bright-grey:                                           rgb(86,90,92);                          // #565A5C Strong grey
+$gef-mine-shaft:                                            rgb(51,51,51);                          // #333 dark grey
+
+$gef-black:                                                 rgb(0,0,0);                             // black
+$gef-dark-grey:                                             $gef-mine-shaft;                        // dark grey
+$gef-medium-grey:                                           $gef-bright-grey;                       // medium grey
+$gef-light-grey:                                            $gef-magnesium;                         // light grey
+$gef-lighter-grey:                                          $gef-zircon;                            // lighter grey
+$gef-off-white:                                             $gef-concrete;                          // off white
+$gef-white:                                                 rgb(255,255,255);                       // white
+
+$gef-nonactive-1:                                           rgb(177,184,189) !default;              // only used for inactive buttons
+$gef-nonactive-2:                                           $gef-dark-grey !default;
+
+$gef-radius:                                                2px !default;
+$gef-radius-lg:                                             4px !default;
+
+// SPACING
+
+$gef-normal-horizontal-spacing:                             25px !default;
+$gef-large-horizontal-spacing:                              40px !default;
+
+// ----------------------
+// THEME
+// ----------------------
+
+$gef-primary-bg:                                            $gef-medium-grey !default;                 // primary colour background
+$gef-primary-text:                                          $gef-white !default;                     // text colour when using primary background
+$gef-primary-bg-action:                                     $gef-black !default;                     // primary colour background on action (hover/focus)
+$gef-primary-text-action:                                   $gef-white !default;                     // text colour when using primary background on action (hover/focus)
+
+$gef-secondary-bg:                                          $gef-light-grey !default;               // seconday colour background
+$gef-secondary-text:                                        $gef-black !default;                     // text color when using secondary background
+$gef-secondary-bg-action:                                   $gef-white !default;                // seconday colour background on action (hover/focus)
+$gef-secondary-text-action:                                 $gef-black !default;                     // text colour when using secondary background on action (hover/focus)
+
+$gef-highlight-panel-bg:                                    $gef-off-white !default;                 // Background on panels that stand out from the body
+$gef-highlight-panel-text:                                  $gef-dark-grey !default;                     // Text colour on panels that stand out from the body
+
+$gef-decoration:                                            $gef-medium-grey !default;               // decorative colour
+$gef-lines:                                                 $gef-light-grey !default;
+
+$gef-content-header:                                        $gef-black !default;                     // header colour for content areas
+
+$gef-focus-outline:                                         1px solid $gef-black !default;
+$gef-focus-inverse:                                         1px solid $gef-white !default;
+$gef-focus-blocks-outline-offset:                           -6px !default;
+$gef-focus-text-outline-offset:                             2px !default;
+
+// FONTS
+
+$gef-font-family:                                           montserrat, Arial, sans-serif !default;
+$gef-color-font-dark:                                       $gef-black !default;
+$gef-color-font-light:                                      #646464 !default;                     // Passes WCAG 2.0 AA for normal and large text accroding to http://webaim.org/resources/contrastchecker/
+$gef-color-font-reverse:                                    $gef-white !default;
+
+// GLOBAL HEADER
+
+$gef-global-header-bg:                                      $gef-lighter-grey !default;
+$gef-global-header-bg-highlight:                            $gef-lighter-grey !default;
+$gef-global-header-color:                                   $gef-dark-grey !default;
+$gef-global-header-color-highlight:                         $gef-black !default;
+$gef-global-header-border:                                  1px solid $gef-medium-grey !default;
+$gef-global-header-search-bg:                               $gef-lighter-grey !default;
+$gef-global-header-search-border:                           $gef-black !default;
+
+$gef-global-header-alt-bg:                                  $gef-primary-bg !default;
+$gef-global-header-alt-bg-highlight:                        $gef-primary-bg !default;
+$gef-global-header-alt-color:                               $gef-lighter-grey !default;
+$gef-global-header-alt-color-highlight:                     $gef-white !default;
+$gef-global-header-alt-border:                              1px solid $gef-light-grey !default;
+$gef-global-header-alt-search-bg:                           $gef-primary-bg !default;
+$gef-global-header-alt-search-border:                       $gef-white !default;
+
+
+
+// SECTION HEADER
+
+$gef-section-header-bg:                                     $gef-primary-bg !default;
+$gef-section-mobile-utility-bar:                            $gef-secondary-bg !default;
+$gef-section-header-logo-color:                             $gef-primary-text !default;
+$gef-section-header-link-color:                             $gef-primary-text !default;
+
+// SECTION FOOTER
+
+$gef-section-footer-bg:                                     $gef-secondary-bg !default;
+$gef-section-footer-link-color:                             $gef-secondary-text !default;
+
+// ----------------------
+// UIKIT OVERRIDES
+// ----------------------
+
+// BASE
+$breakpoint-large:                                          $gef-max-width !default;
+$breakpoint-xlarge:                                         $gef-max-width !default;
+
+$utility-container-padding-horizontal:                      $gef-normal-horizontal-spacing !default;
+
+$utility-container-large-max-width:                         $gef-max-width !default;
+$utility-container-large-padding-horizontal:                $gef-large-horizontal-spacing !default;
+
+$grid-gutter-large-horizontal:                              $gef-large-horizontal-spacing !default;
+
+$base-margin-vertical:                                      10px !default;
+
+$base-body-font-family:                                     $gef-font-family !default;
+$base-heading-font-family:                                  $gef-font-family !default;
+
+$base-body-color:                                           $gef-color-font-dark !default;
+$base-body-bg:                                              $gef-white !default;
+$base-body-bg-alt:                                          $gef-off-white !default;
+
+$base-body-font-size:                                       16px !default;
+$base-body-font-weight:                                     400 !default;
+$base-body-line-height:                                     1.5 !default;
+
+$base-heading-color:                                        $gef-color-font-dark !default;
+$base-heading-font-weight:                                  800 !default;
+$base-heading-margin-top:                                   30px !default;
+
+$base-h1-font-size:                                         1.375rem !default;
+$base-h1-line-height:                                       1.63 !default;
+$base-h2-font-size:                                         1.125rem !default;
+$base-h2-line-height:                                       1.5 !default;
+$base-h3-font-size:                                         1rem !default;
+$base-h3-line-height:                                       1.43 !default;
+$base-h4-font-size:                                         1rem !default;
+$base-h4-line-height:                                       1.43 !default;
+$base-h5-font-size:                                         1rem !default;
+$base-h5-line-height:                                       1.43 !default;
+$base-h6-font-size:                                         1rem !default;
+$base-h6-line-height:                                       1.43 !default;
+
+$base-blockquote-font-size:                                 1.125rem !default;
+$base-blockquote-line-height:                               1.5 !default;
+$base-blockquote-font-style:                                normal !default;
+
+// UTILITY
+
+$utility-container-padding-horizontal:                      12px !default;
+$utility-container-padding-vertical:                        12px !default;
+$utility-margin-large:                                      30px !default;
+
+// LINKS
+
+$base-link-color:                                           $gef-color-font-dark !default;
+$base-link-text-decoration:                                 underline !default;
+$base-link-hover-color:                                     $gef-color-font-dark !default;
+$base-link-hover-text-decoration:                           none !default;
+
+// TEXT
+
+$text-large-font-size:                                      1.125rem !default;
+$text-large-line-height:                                    1.5 !default;
+
+// UK BUTTONS OVERRIDES
+
+$button-padding-horizontal:                                 16px !default;
+$button-height:                                             50px !default;
+$button-line-height:                                        1.2em !default;
+$button-font-size:                                          1rem !default;
+$button-font-weight:                                        600 !default;
+$button-background:                                         $gef-primary-bg !default;
+$button-color:                                              $gef-primary-text !default;
+$button-hover-background:                                   $gef-primary-bg-action !default;
+$button-hover-color:                                        $gef-primary-text-action !default;
+$button-active-background:                                  $gef-primary-bg !default;
+$button-active-color:                                       $gef-primary-text !default;
+$button-disabled-color:                                     $gef-nonactive-2 !default;
+$button-disabled-background:                                $gef-nonactive-1 !default;
+$button-disabled-border:                                    $gef-medium-grey !default;
+$button-radius:                                             3px !default;
+$button-min-width:                                          240px !default;
+$button-min-width-small:                                    140px !default;
+$button-padding:                                            14px 16px 0 !default;
+$button-box-shading:                                        0px 0px 4px 0px rgba(0,0,0,0.4) !default;
+$button-vertical-align:                                     middle !default;
+$button-small-line-height:                                  20px !default;
+$button-small-font-size:                                    0.9rem !default;
+$button-primary-color:                                      $gef-secondary-text !default;
+$button-primary-hover-color:                                $gef-secondary-text-action !default;
+$button-primary-background:                                 $gef-secondary-bg !default;
+$button-primary-hover-background:                           $gef-secondary-bg-action !default;
+$button-success-color:                                      $gef-black !default;
+$button-success-background:                                 #109f71 !default;
+$button-success-hover-background:                           #046E4C !important !default;
+$button-danger-color:                                       $gef-black !default;
+$button-danger-background:                                  #E94557 !default;
+$button-danger-hover-background:                            #9D1F2D !important !default;
+
+
+// NEW BUTTON STYLE
+
+$button-default-padding:                                    8px 11px  !default;
+$button-default-height:                                     42px !default;
+$button-default-radius:                                     4px !default;
+$button-default-font-size:                                  0.88rem !default;
+$button-default-font-weight:                                700 !default;
+$button-border-color:                                       $gef-primary-bg !default;
+$button-border-color-highlight:                             #000 !default;
+$button-border-width:                                       2px !default;
+$button-default-letter-spacing:                             1.3px !default;
+$button-x-small-padding:                                    7px 6px 6px !default;
+$button-x-small-height:                                     18px !default;
+$button-x-small-font-size:                                  0.75rem !default;
+$button-small-padding:                                      8px 7px  !default;
+$button-small-height:                                       36px !default;
+$button-small-font-size:                                    0.8rem !default;
+$button-large-padding:                                      13px 19px  !default;
+$button-large-height:                                       49px !default;
+$button-large-font-size:                                    0.95rem !default;
+$button-x-large-padding:                                    20px 25px  !default;
+$button-x-large-height:                                     63px !default;
+$button-x-large-font-size:                                  1rem !default;
+$button-alt1-background:                                     transparent !default;
+$button-alt1-background-highlight:                           $gef-primary-bg !default;
+$button-alt1-color:                                          $gef-primary-bg !default;
+$button-alt1-color-highlight:                                $gef-white !default;
+$button-alt1-border-color:                                   $gef-primary-bg !default;
+$button-alt1-border-color-highlight:                         $gef-primary-bg !default;
+$button-alt1-border-width:                                   2px !default;
+$button-alt1-font-weight:                                    800;
+
+// BREADCRUMBS
+
+$breadcrumbs-color:                                         $gef-color-font-dark !default;
+$breadcrumbs-dropdown-area-color:                           $breadcrumbs-color !default;
+$breadcrumbs-dropdown-area-bg:                              transparent !default;
+$breadcrumbs-dropdown-area-hover-color:                     $gef-white !default;
+$breadcrumbs-dropdown-area-hover-bg:                        $gef-primary-bg !default;
+$breadcrumbs-dropdown-color:                                $gef-white !default;
+$breadcrumbs-dropdown-bg:                                   $gef-primary-bg !default;
+$breadcrumbs-dropdown-width:                                225px !default;
+$breadcrumbs-tooltip-color:                                 $breadcrumbs-color !default;
+$breadcrumbs-tooltip-bg:                                    $gef-lighter-grey !default;
+$breadcrumbs-tooltip-stroke:                                $gef-light-grey !default;
+$breadcrumbs-tooltip-arrow-path:                            url('../images/tooltip-triangle.svg') !default;
+$breadcrumbs-tooltip-delay:                                 0.4s !default;
+
+// CATALOGUE
+$catalogue-teaser-border:                                   $gef-lighter-grey !default;
+$catalogue-image-border:                                    $gef-light-grey !default;
+
+// NAVBAR
+
+$navbar-background:                                         transparent !default;
+$navbar-color:                                              $gef-black !default;
+$navbar-link-color:                                         $gef-secondary-text !default;
+$navbar-link-hover-color:                                   $gef-secondary-text !default;
+$navbar-nav-height:                                         auto !default;
+$navbar-nav-line-height:                                    18px !default;
+$navbar-nav-padding-horizontal:                             0 !default;
+$navbar-nav-color:                                          $gef-black !default;
+$navbar-nav-font-size:                                      14px !default;
+$navbar-nav-font-height:                                    normal !default;
+$navbar-nav-font-family:                                    $gef-font-family !default;
+$navbar-nav-hover-background:                               transparent !default;
+$navbar-nav-hover-color:                                    $gef-black !default;
+$navbar-nav-onclick-background:                             transparent !default;
+$navbar-nav-onclick-color:                                  $gef-black !default;
+$navbar-nav-active-background:                              transparent !default;
+$navbar-nav-active-color:                                   $gef-black !default;
+$navbar-nav-subtitle-font-size:                             10px !default;
+$navbar-nav-subtitle-offset:                                2px !default;
+$navbar-brand-font-size:                                    18px !default;
+$navbar-brand-color:                                        $gef-black !default;
+$navbar-brand-hover-color:                                  $gef-black !default;
+$navbar-toggle-font-size:                                   26px !default;
+$navbar-toggle-color:                                       $gef-black !default;
+$navbar-toggle-hover-color:                                 $gef-black !default;
+$navbar-toggle-icon:                                        "\f0c9" !default;
+$navbar-toggle-icon-alt:                                    "\f002" !default;
+
+// PAGINATION
+
+$pagination-font-size:                                      0.825rem !default;
+$pagination-font-size-lg:                                   0.9rem !default;
+$pagination-margin-left:                                    5px !default;
+$pagination-padding-vertical:                               4px !default;
+$pagination-padding-horizontal:                             10px !default;
+$pagination-padding-horizontal-lg:                          8px !default;
+$pagination-padding:                                        $pagination-padding-vertical $pagination-padding-horizontal !default;
+$pagination-padding-lg:                                     $pagination-padding-vertical $pagination-padding-horizontal-lg !default;
+$pagination-line-height:                                    2 !default;
+$pagination-bg:                                             $gef-white !default;
+$pagination-bg-action:                                      $gef-white !default;
+$pagination-bg-disabled:                                    $gef-white !default;
+$pagination-color:                                          $gef-black !default;
+$pagination-color-action:                                   $gef-black !default;
+$pagination-color-disabled:                                 $gef-medium-grey !default;
+$pagination-border-color:                                   $gef-black !default;
+$pagination-border-color-action:                            $gef-black !default;
+$pagination-border-color-disabled:                          $gef-light-grey !default;
+
+// FORM
+
+$form-radio-color:                                          $gef-dark-grey !default;
+$form-height:                                               35px !default;
+$form-padding:                                              0 10px !default;
+$form-border:                                               $gef-black !default;
+$form-border-width:                                         1px !default;
+$form-background:                                           $gef-white !default;
+$form-color:                                                $gef-black !default;
+$form-focus-border:                                         $gef-decoration !default;
+$form-focus-background:                                     $gef-white !default;
+$form-focus-color:                                          $gef-black !default;
+$form-disabled-border:                                      #ddd !default;
+$form-disabled-background:                                  #f5f5f5 !default;
+$form-disabled-color:                                       #999 !default;
+$form-placeholder-color:                                    $gef-dark-grey !default;
+$form-gutter:                                               15px !default;
+$form-legend-border:                                        #ddd !default;
+$form-legend-border-width:                                  1px !default;
+$form-legend-font-size:                                     18px !default;
+$form-legend-line-height:                                   30px !default;
+$form-small-height:                                         25px !default;
+$form-large-height:                                         50px !default;
+$form-small-padding:                                        3px 3px !default;
+$form-large-padding:                                        8px 6px !default;
+$form-small-font-size:                                      12px !default;
+$form-large-font-size:                                      16px !default;
+$form-blank-border:                                         #ddd !default;
+$form-blank-border-style:                                   dashed !default;
+$form-mini-width:                                           40px !default;
+$form-small-width:                                          130px !default;
+$form-medium-width:                                         200px !default;
+$form-large-width:                                          500px !default;
+$form-help-inline-margin-left:                              10px !default;
+$form-help-block-margin-top:                                5px !default;
+$form-controls-condensed-margin-vertical:                   5px !default;
+$form-stacked-margin-bottom:                                5px !default;
+$form-stacked-font-weight:                                  bold !default;
+$form-horizontal-label-width:                               200px !default;
+$form-horizontal-label-margin-top:                          5px !default;
+$form-horizontal-controls-margin-left:                      215px !default;
+$form-horizontal-controls-text-padding-top:                 5px !default;
+$form-icon-width:                                           30px !default;
+$form-icon-font-size:                                       14px !default;
+$form-icon-color:                                           #999 !default;
+$form-success-border:                                       #109f71 !default;
+$form-success-color:                                        #109f71 !default;
+$form-danger-border:                                        #E94557 !default;
+$form-danger-color:                                         #E94557 !default;
+
+// HR
+
+$base-hr-border:                                            $gef-light-grey;
+$base-hr-border-width:                                      2px !default;
+$base-hr-margin-vertical:                                   25px !default;
+
+// BLOCK
+
+$block-padding-vertical:                                    20px !default;
+$block-padding-vertical-large:                              30px !default;
+
+// PANEL
+$panel-box-background:                                      transparent !default;
+$panel-box-padding:                                         10px !default;
+
+// SIDE NAVIGATION
+$side-nav-border:                                           $gef-lines !default;
+$side-nav-parent-bg:                                        $gef-lighter-grey !default;
+
+// SEARCH BOX
+$search-box-body-button-bg:                                 $gef-black !default;
+$search-box-body-button-bg-action:                          $gef-dark-grey !default;
+$search-box-body-button-color:                              $gef-white !default;
+$search-box-body-button-color-action:                       $gef-white !default;
+$search-box-body-input-border:                              $gef-black !default;
+$search-box-body-input-radius:                              $gef-radius !default;
+$search-box-body-input-border-action:                       $gef-black !default;
+$search-box-body-input-color:                               $gef-black !default;
+$search-box-body-input-color-action:                        $gef-black !default;
+$search-box-body-input-placeholder:                         $gef-dark-grey !default;
+
+// TEASER
+
+$teaser-description-font-size:                              1.1rem !default;
+$teaser-description-ellipsis-lines:                         3 !default;
+
+// TILE
+$tile-description-ellipsis-lines:                           4 !default;
+
+// TABS
+$tab-border:                                                transparent !default;
+$tab-border-width:                                          1px !default;
+$tab-padding-horizontal:                                    18px !default;
+$tab-padding-vertical:                                      16px !default;
+$tab-padding-top:                                           $tab-padding-vertical !default;
+$tab-padding-bottom:                                        $tab-padding-vertical !default;
+$tab-margin-horizontal:                                     0 !default;
+$tab-margin-vertical:                                       0 !default;
+$tab-color:                                                 $gef-medium-grey !default;
+$tab-hover-border:                                          transparent !default;
+$tab-hover-background:                                      transparent !default;
+$tab-hover-color:                                           $gef-medium-grey !default;
+$tab-active-border:                                         transparent !default;
+$tab-active-background:                                     transparent !default;
+$tab-active-color:                                          $gef-dark-grey !default;
+$tab-disabled-color:                                        #999 !default;
+
+//RESULTS TABLE
+$gef-results-table-heading-bgcolor:                         $gef-medium-grey !default;
+$gef-results-table-heading-color:                           $gef-white !default;
+$gef-results-table-color:                                   $gef-bright-grey !default;
+$gef-results-table-chevron-color:                           $gef-medium-grey !default;
+$gef-results-table-letter-color:                            $gef-medium-grey !default;
+$gef-results-table-link-text:                               $gef-medium-grey !default;
+$gef-results-table-bold:                                    600 !default;
+$gef-results-table-divider:                                 solid 1px #e0e0e0 !default;
+$gef-results-table-font-family:                             $gef-font-family !default;
+
+// BACK TO TOP
+$btt-border:                                                $gef-light-grey !default;
+$btt-arrow:                                                 $gef-medium-grey !default;
+$btt-background:                                            transparent !default;
+$btt-border-action:                                         $gef-medium-grey !default;
+$btt-arrow-action:                                          $gef-white !default;
+$btt-background-action:                                     $gef-medium-grey !default;
+
+// DRAWER
+$drawer-tab-bg:                                             $gef-dark-grey !default;
+$drawer-tab-color:                                          $gef-white !default;
+$drawer-tab-height:                                         50px !default;
+$drawer-tab-bg-action:                                      $gef-black !default;
+$drawer-panel-border:                                       2px solid $gef-dark-grey !default;
+
+// LINK BUTTON
+$link-button-bg:                                            $gef-light-grey !default;
+$link-button-color:                                         $gef-white !default;
+$link-button-height:                                        20px !default;
+$link-button-width:                                         63px !default;
+$link-button-padding:                                       3px 7px 3px 5px !default;
+
+// DOWNLOAD BOX
+$download-box-color:                                        $gef-bright-grey;
+$download-box-background:                                   $gef-concrete;
+$download-box-heading-color:                                $gef-mine-shaft;
+$download-box-padding:                                      15px;
+$download-box-border-radius:                                2px;
+
+// A to Z LIST
+$a-z-list-content-color:                                    $gef-medium-grey !default;
+$a-z-list-content-padding-bottom:                           20px !default;
+$a-z-list-content-margin-top:                               20px !default;
+$a-z-list-content-heading-color:                            $gef-dark-grey !default;
+$a-z-list-content-border-color-bottom:                      rgb(224,224,224) !default;
+$a-z-list-alphabet-color:                                   $gef-dark-grey !default;
+$a-z-list-border-color-top:                                 $gef-black !default;
+$a-z-list-border-color-bottom:                              $gef-black !default;
+
+// RADIO LIST
+$gef-radio-list-icon-color:                                 $gef-black !default;
+
+// BACK TO
+$gef-back-to-icon-color:                                    $gef-black !default;
+
+// EDUCATION BANNER
+$gef-edu-banner-bg:                                         $gef-dark-grey !default;
+$gef-edu-banner-color:                                      $gef-white !default;
+$gef-edu-banner-input-active-border-color:                  $gef-light-grey !default;
+
+// NOTICE RIBBON
+$gef-notice-ribbon-cta-color:                               $gef-dark-grey !default;
+
+//USED IN EVENT FROM SWS
+$gef-md: 767px;
+$gef-sm: 200px;
+$gef-lg: 960px;
+//----------------------------------
+// MEDIA QUERIES FOR EVENTS COMPONENT
+
+$gef-mq-re-s: "screen and (max-width: 620px)" !default; // responsive widths to decide on grid columns
+$gef-mq-re-m: "screen and (min-width: 630px)" !default; // responsive widths to decide on grid columns
+$gef-mq-re-l: "screen and (min-width: 1200px)" !default; // For small desktops
+// ----------------------
