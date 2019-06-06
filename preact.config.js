@@ -5,8 +5,7 @@ const appSrcPath = path.resolve(process.cwd(), 'src');
 module.exports = (config, env, helpers) => {
 
   // resolve module paths
-  const newResolveModules = [...config.resolve.modules, appSrcPath];
-  config.resolve.modules = newResolveModules;
+  config.resolve.modules = [...config.resolve.modules, appSrcPath];
 
   if (env === 'development') {
     // show fullscreen error overlay
